@@ -16,35 +16,8 @@ QTDesigner, designer UI XML
 Database, sqlite3
 OS, Mac Pro
 2. Package Hierarchy
-JobAppSystem
-    --->readme.txt                      #Help to understand and start the project
-    --->org
-        --->cu
-            --->api
-                ApplicationService      #Definition abstract functions to implements apply job for the role of applicant
-                ReviewerService         #Definition abstract functions to implements review job for the role of reviewer
-                ManagerService          #Definition abstract functions to implements manager job positions for the role of manger
-            --->common
-                ConvertCommon           #Convert ui data to entity object
-                MessageCommon           #Provide common message window, like pop alert,confirm sub-window
-                ToolsCommon             #Provide common functions, like get unique id, current data...
-                Serializable            #Provide object to JSON
-            --->dao
-                ...
-                DaoService.py           #Handle operation database and provide basically functions to access database and initial tables of database when the first started.
-            --->entity
-                ...
-            --->implement
-                ...                     #implements all functions reference the package api
-                JobApplication          #Load all of sub-page, it was called by MainWindow
-            --->resources
-                --->database
-                    job.db              #Database sqlite3
-                --->gui
-                    job.ui              #All GUI design by QTDesigner
-            --->test                    #For testing
-                --->resources
-                    --->gui
-            MainWindow.py               #Main Window with main function, it can start project.
+
+![jobappsystem](https://user-images.githubusercontent.com/183577/148918558-51ab7d53-db84-4867-a629-b94649f64fa3.png)
+
 3. How to start it
 if you have been installed Python, 3.8 on your computer, only need you to start main window(MainWindow.py) enjoy it.
